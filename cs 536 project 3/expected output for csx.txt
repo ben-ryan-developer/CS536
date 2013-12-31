@@ -1,0 +1,79 @@
+Buildfile: /Users/charlesfischer/Documents/536 fall 2013/eclipse/cs 536 project 3 complete/build.xml
+checkJLexNeeded:
+JLex:
+checkCupNeeded:
+Cup:
+checkASTNeeded:
+AST:
+compile:
+    [javac] Compiling 1 source file to /Users/charlesfischer/Documents/536 fall 2013/eclipse/cs 536 project 3 complete/bin
+test:
+     [echo] ------- test using test.csx ----------
+     [echo]  	     
+     [java] Parsing file test.csx.
+     [java] test.csx parsed correctly.
+     [java] Here is its unparsing:
+     [java] 1: class test {
+     [java] 5:	   int i = 0;
+     [java] 6:	   int j = ~123;
+     [java] 7:	   int bigPos = 11111111;
+     [java] 8:	   int bigNeg = ~2222222;
+     [java] 9:	   bool ja = true;
+     [java] 10:	   bool nein = false;
+     [java] 11:	   char c = 'c';
+     [java] 12:	   char nl = '\n';
+     [java] 13:	   char tab = '\t';
+     [java] 14:	   char bslash = '\\';
+     [java] 15:	   char tic = '\'';
+     [java] 16:	   const ten = 10;
+     [java] 17:	   int ar [ 100 ];
+     [java] 19:	   void p (int j, bool bb [ ]) {
+     [java] 20:	      print("Ans = ", (j + 1), "\n");
+     [java] 19:	   }
+     [java] 23:	   int f (int i, int j) {
+     [java] 24:	      ar[i] = 100;
+     [java] 25:	      suspend();
+     [java] 26:	      i++;
+     [java] 27:	      j++;
+     [java] 28:	      return (i + j);
+     [java] 23:	   }
+     [java] 31:	   void main () {
+     [java] 32:	      read(b);
+     [java] 34:	      if ((b || true))
+     [java] 34:	         {
+     [java] 35:	            bool local;
+     [java] 36:	            local = (b && false);
+     [java] 34:	         }
+     [java] 34:	      else 
+     [java] 37:	         b = (! (b || true));
+     [java] 39:	      L: while ((! (i == 0)))
+     [java] 39:	         {
+     [java] 40:	            i = ((i * i) / 2);
+     [java] 40:	            break L;
+     [java] 41:	            i = (((int) i) / (i - 2));
+     [java] 41:	            continue L;
+     [java] 39:	         }
+     [java] 44:	      if (((((i == 10) || (i < 21)) || (i > ~17)) || (i != 123)))
+     [java] 44:	         {
+     [java] 45:	            print(i);
+     [java] 46:	            p(17);
+     [java] 46:	            q();
+     [java] 46:	            return;
+     [java] 44:	         }
+     [java] 49:	      if (((i >= f(~3, 10, 20)) || (i <= f((i - 1)))))
+     [java] 50:	         print(i, f(i), 'Z', ar[123], "\n");
+     [java] 31:	   }
+     [java] 1: } EOF
+     [echo] ------- test using test1.csx ----------
+     [echo]  	 	     
+     [java] Parsing file test1.csx.
+     [java] test1.csx parsed correctly.
+     [java] Here is its unparsing:
+     [java] 1: class test {
+     [java] 5:	   int i = 0;
+     [java] 6:	   void f (int i) {
+     [java] 7:	      i = (i + 1);
+     [java] 6:	   }
+     [java] 1: } EOF
+BUILD SUCCESSFUL
+Total time: 4 seconds
